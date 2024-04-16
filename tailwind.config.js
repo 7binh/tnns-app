@@ -8,6 +8,7 @@ module.exports = {
       white: "#fff",
       darkGray: "#555",
       lightGray: "#ddd",
+      black: "#000",
     },
     extend: {},
   },

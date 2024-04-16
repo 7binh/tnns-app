@@ -1,15 +1,19 @@
 import React from "react";
 import HeaderApp from "./components/headerApp/HeaderApp";
-
 import HeaderMenu from "./components/headerApp/HeaderMenu";
-import HeaderMenuNav from "./components/headerApp/HeaderMenuNav";
+import BannerApp from "./components/bannerApp/BannerApp";
+import ContainerApp from "./components/ContainerApp";
+import ProductApp from "./components/product/ProductApp";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="bg-[#fdfdfd]">
       <HeaderApp></HeaderApp>
       <HeaderMenu></HeaderMenu>
-
+      <ContainerApp>
+        <BannerApp></BannerApp>
+        <ProductApp></ProductApp>
+      </ContainerApp>
     </div>
   );
 };

@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import { FaGift } from "react-icons/fa";
 import HeaderMenuNavItem from "./HeaderMenuNavItem";
 import { PiGearFine } from "react-icons/pi";
+import HeaderSubNav from "./HeaderSubNav";
 
 const HeaderMenuNav = () => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div className="absolute top-[87%] left-0 flex">
-      <div className="text-[black] rounded-2xl border-solid shadow-2xl z-10 bg-white  w-[300px] pr-0 overflow-hidden">
+      <div className="text-[black] rounded-2xl border-solid border-lightGray border z-10 bg-white  w-[300px] pr-0 overflow-hidden">
         <ul className="">
           <HeaderMenuNavItem>
             <FaGift />
@@ -15,19 +16,11 @@ const HeaderMenuNav = () => {
           </HeaderMenuNavItem>
           <HeaderMenuNavItem>
             <PiGearFine />
-            Linh kiện mới/cũ
+            Linh kiện mới
           </HeaderMenuNavItem>
         </ul>
       </div>
-      <div className="text-[black] p-4 rounded-2xl border-solid shadow-2xl z-10 bg-white pr-0 w-[900px]">
-        <ul className="grid grid-cols-4">
-          <li>1312</li>
-          <li>1312</li>
-          <li>1312</li>
-          <li>1312</li>
-          <li>1312</li>
-        </ul>
-      </div>
+      <HeaderSubNav></HeaderSubNav>
     </div>
   );
 };
