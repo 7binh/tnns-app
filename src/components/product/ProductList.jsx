@@ -1,10 +1,10 @@
 import React from "react";
 import ProductItem from "./ProductItem";
-import { Products } from "./Products";
+import { Products } from "../../data/Products";
 
 const ProductList = () => {
   return (
-    <div className="grid grid-cols-4 gap-4">
+    <a href="/details" className="grid grid-cols-4 gap-4">
       {Products.map((item, index) => (
         <ProductItem
           key={item.id}
@@ -13,7 +13,7 @@ const ProductList = () => {
           price={item.price}
         ></ProductItem>
       ))}
-    </div>
+    </a>
   );
 };
 

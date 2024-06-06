@@ -1,5 +1,4 @@
 import React from "react";
-import { Products } from "./Products";
 import Button from "../button/Button";
 import ButtonSecondary from "../button/ButtonSecondary";
 
@@ -16,11 +15,15 @@ const ProductItem = (props) => {
       <div className=" text-center">
         <h4 className="line-clamp-2 font-bold mb-2">{props.name}</h4>
 
-        <p className="text-primary mb-3 ">{props.price}</p>
+        <p className="text-primary mb-3 font-semibold ">{props.price} $</p>
       </div>
       <div className="flex gap-2 mb-3">
-        <Button>Chi tiết</Button>
-        <ButtonSecondary>Thêm vào giỏ hàng</ButtonSecondary>
+        <Button>
+          <a href="/details">Chi tiết</a>
+        </Button>
+        <ButtonSecondary>
+          <a href="/#">Thêm vào giỏ hàng</a>
+        </ButtonSecondary>
       </div>
     </div>
   );
